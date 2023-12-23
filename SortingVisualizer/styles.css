@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    padding: 0 20px 30px 0;
+    padding: 0 0 0 0;
     line-height: 1.4;
 }
 .flex-container{
@@ -24,9 +24,9 @@ body {
 
 .row{
     display: grid;
-    text-align: left;
+    text-align: left;   
     
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 1fr 2fr 0.5fr ;
 }
 
 .col {
@@ -48,3 +48,19 @@ label {
     padding: 20px;
     justify-content: space-around;
 }
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+

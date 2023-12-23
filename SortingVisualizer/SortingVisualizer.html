@@ -10,23 +10,21 @@
 </head>
 <header>
     <h1 align="center">Sorting Visualizer</h1>
-    <nav>        
+    <nav>
+                
         <div class="row">
+            <button type="button" style="background-color: #333;color: aliceblue;">Home</button>
+            <button type="button" class="newArray" style="background-color: #333;color: aliceblue;"> New Array </button>
+            <select id="Algorithm" name="Algorithm" style="background-color: #333;color: aliceblue;">
+                <option value="" disable selected hidden>Algorithm</option>
+                <option value="Bubble">Bubble Sort</option>
+                <option value="Selection">Selection Sort</option>
+                <option value="Insertion">Insertion Sort</option>
+                <option value="Quick">Quick Sort</option>
+                <option value="Merge">Merge Sort</option>
+            </select>
             
-            <div class="col gap-2 d-sm-flex">
-                <button type="button" class="btn btn-outline-success btn-dark home">Home</button>
-                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>                
-            </div>                 
-            
-            <div class="col" id="input">
-                <label for="Algorithm">Algorithm:</label>
-                <select id="Algorithm" name="Algorithm">
-                    <option value="Bubble">Bubble Sort</option>
-                    <option value="Selection">Selection Sort</option>
-                    <option value="Insertion">Insertion Sort</option>
-                    <option value="Quick">Quick Sort</option>
-                    <option value="Merge">Merge Sort</option>
-                </select>
+            <div class="col" id="input">                 
                 <span id="size">Array Size
                     <input id="arr_sz" type="range" min="5" max="30" step=1 value=60>
                 </span>
@@ -34,12 +32,20 @@
                     <input id="speed_input" type="range" min="20" max="980" stepDown=10 value=60>
                 </span>
             </div>
+            
+            
+            <button type="button" class="Sort" style="background-color: #333;color: aliceblue;">Sort</button>        
 
-            <div class="col gap-2 d-sm-flex justify-content-end">
-                <button type="button" class="btn btn-outline-success btn-dark Sort">Sort</button>
-            </div>
 
+            
         </div>
+                           
+            
+            
+
+            
+
+        
     </nav>
 </header>
 <body class="p-3 mb-2 bg-dark text-white">
